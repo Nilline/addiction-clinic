@@ -4878,7 +4878,7 @@ textarea.input {
   }
 }
 
-@media (min-width: 61.99875empx) {
+@media (min-width: 61.99875em) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
     background-color: rgba(0, 0, 0, 0.5);
@@ -6398,7 +6398,7 @@ textarea.input {
   }
 }
 
-@media (max-width: 61.99875empx) {
+@media (max-width: 61.99875em) {
   .select__title {
     font-size: 18px;
   }
