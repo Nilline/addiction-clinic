@@ -4925,7 +4925,7 @@ textarea.input {
   }
 
   .services__body {
-    margin-bottom: 104px;
+    padding-bottom: 104px;
   }
 
   .services__image {
@@ -5734,7 +5734,7 @@ textarea.input {
   }
 
   .services__body {
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .content-services__subtitle {
@@ -7374,7 +7374,7 @@ textarea.input {
 
 @media (min-width: 20em) and (max-width: 61.99875em) {
   .services__body {
-    margin-bottom: calc(0px + 104 * (((100vw - 320px)) / ((671.98))));
+    padding-bottom: calc(0px + 104 * (((100vw - 320px)) / ((671.98))));
   }
 }
 
