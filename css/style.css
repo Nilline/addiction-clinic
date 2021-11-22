@@ -1,6 +1,6 @@
 @charset "UTF-8";
-
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext);
+
 
 * {
   padding: 0px;
@@ -7653,11 +7653,11 @@ textarea.input {
     fill: #fff;
   }
 
-  .list-social__link:hover::before {
+  .footer__social-list .list-social__link:hover::before {
     background-color: #fff;
   }
 
-  .list-social__link:hover svg path {
+  .footer__social-list .list-social__link:hover svg path {
     fill: #2770f1;
   }
 
