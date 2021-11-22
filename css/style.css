@@ -1,6 +1,6 @@
-@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext);
 
+@charset "UTF-8";
 
 * {
   padding: 0px;
@@ -3964,8 +3964,6 @@ textarea.input {
 .license__content {
   cursor: pointer;
   position: relative;
-  -webkit-filter: grayscale(0.4);
-          filter: grayscale(0.4);
   -webkit-transition: -webkit-filter 0.2s ease 0s;
   transition: -webkit-filter 0.2s ease 0s;
   -o-transition: filter 0.2s ease 0s;
@@ -3973,34 +3971,15 @@ textarea.input {
   transition: filter 0.2s ease 0s, -webkit-filter 0.2s ease 0s;
 }
 
-.license__content::after,
-.license__content::before {
+.license__content::after {
   content: "";
   position: absolute;
-}
-
-.license__content::after {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   border: 12px solid #fff;
   z-index: 1;
-}
-
-.license__content::before {
-  width: calc(100% - 24px);
-  height: calc(100% - 24px);
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 2;
-  background-color: rgba(21, 47, 96, 0.6);
-  -webkit-transition: background-color 0.2s ease 0s;
-  -o-transition: background-color 0.2s ease 0s;
-  transition: background-color 0.2s ease 0s;
 }
 
 .license__picture {
@@ -7678,6 +7657,28 @@ textarea.input {
             box-shadow: 0px 4px 24px rgba(27, 49, 95, 0.15);
   }
 
+  .license__content {
+    -webkit-filter: grayscale(0.4);
+            filter: grayscale(0.4);
+  }
+
+  .license__content::before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(21, 47, 96, 0.6);
+    -webkit-transition: background-color 0.2s ease 0s;
+    -o-transition: background-color 0.2s ease 0s;
+    transition: background-color 0.2s ease 0s;
+  }
+
   .license__content:hover {
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
@@ -7727,6 +7728,13 @@ textarea.input {
   .info-content-map__link:hover {
     color: #2770f1;
     text-decoration: underline;
+  }
+}
+
+@media (hover: none) {
+  .license__content {
+    -webkit-filter: grayscale(0.7);
+            filter: grayscale(0.7);
   }
 }
 
