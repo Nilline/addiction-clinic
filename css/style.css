@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext);
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext);
 
 * {
   padding: 0px;
@@ -4883,9 +4883,7 @@ textarea.input {
   .quantity__button:hover::after {
     background-color: rgba(0, 0, 0, 0.5);
   }
-}
 
-@media (min-width: 61.99875em) {
   .list-social {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -6406,9 +6404,7 @@ textarea.input {
   .select__options {
     font-size: 18px;
   }
-}
 
-@media (max-width: 61.99875em) {
   .contacts-header {
     text-align: center;
   }
