@@ -3978,7 +3978,6 @@ textarea.input {
   height: 100%;
   top: 0;
   left: 0;
-  border: 12px solid #fff;
   z-index: 1;
 }
 
@@ -4061,7 +4060,9 @@ textarea.input {
 
 .content-info__item::before {
   content: "";
-  width: 6px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 6px;
+          flex: 0 0 6px;
   height: 6px;
   background-color: #1ebb92;
   border-radius: 50%;
@@ -5604,7 +5605,7 @@ textarea.input {
 
 @media (max-width: 120em) {
   .content-guarantees__body::before {
-    border: calc(10px + 18 * (100vw - 320px) / 1600) solid #fff;
+    border: calc(8px + 20 * (100vw - 320px) / 1600) solid #fff;
   }
 }
 
@@ -5825,7 +5826,7 @@ textarea.input {
   }
 
   .content-guarantees__text {
-    font-size: 1rem;
+    font-size: 0.9375rem;
   }
 
   .doctors__body {
@@ -6864,6 +6865,14 @@ textarea.input {
   }
 }
 
+@media (max-width: 21.875em) {
+  .content-guarantees__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
 @media (min-width: 20em) and (max-width: 120em) {
   .title {
     font-size: calc(1.625rem + 18 * (((100vw - 320px)) / ((1600))));
@@ -7042,7 +7051,7 @@ textarea.input {
   }
 
   .content-guarantees__text {
-    font-size: calc(1rem + 2 * (((100vw - 320px)) / ((1600))));
+    font-size: calc(0.9375rem + 3 * (((100vw - 320px)) / ((1600))));
   }
 
   .doctors__body {
@@ -7679,6 +7688,10 @@ textarea.input {
     transition: background-color 0.2s ease 0s;
   }
 
+  .license__content::after {
+    border: 12px solid #fff;
+  }
+
   .license__content:hover {
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
@@ -7735,6 +7748,10 @@ textarea.input {
   .license__content {
     -webkit-filter: grayscale(0.7);
             filter: grayscale(0.7);
+  }
+
+  .license__content::after {
+    border: 3px solid #fff;
   }
 }
 
