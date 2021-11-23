@@ -5810,7 +5810,7 @@ textarea.input {
   }
 
   .content-guarantees__item {
-    padding: 8px;
+    padding: 7px;
   }
 
   .content-guarantees__icon-block {
@@ -5826,7 +5826,7 @@ textarea.input {
   }
 
   .content-guarantees__text {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
   }
 
   .doctors__body {
@@ -7035,7 +7035,7 @@ textarea.input {
   }
 
   .content-guarantees__item {
-    padding: calc(8px + 16 * (((100vw - 320px)) / ((1600))));
+    padding: calc(7px + 17 * (((100vw - 320px)) / ((1600))));
   }
 
   .content-guarantees__icon-block {
@@ -7051,7 +7051,7 @@ textarea.input {
   }
 
   .content-guarantees__text {
-    font-size: calc(0.9375rem + 3 * (((100vw - 320px)) / ((1600))));
+    font-size: calc(0.875rem + 4 * (((100vw - 320px)) / ((1600))));
   }
 
   .doctors__body {
